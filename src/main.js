@@ -200,13 +200,13 @@ function dataMovie(e) {
     peopleInformation +
     carouselClose +
     locationsText +
-    // carouselOpen +
+    carouselOpen +
     locationsInformation +
-    // carouselClose +
+    carouselClose +
     vehiclesText +
-    // carouselOpen +
+    carouselOpen +
     vehiclesInformation +
-    // carouselClose +
+    carouselClose +
     footerInformation;
 
   // Carousel
@@ -233,7 +233,7 @@ searcherInput.addEventListener("keyup", test);
 
 function test() {
   const value = searcherInput.value;
-  const filteredData = searchFilters(value);
+  const filteredData = searchFilters(value, data.films);
 
   let output = "";
   for (let i = 0; i < filteredData.length; i++) {
@@ -267,7 +267,7 @@ for (let nodo of genreDesktop) {
 
 function test2(e) {
   const textGenre = e.target.textContent;
-  const filteredData = GenreFilters(textGenre);
+  const filteredData = GenreFilters(textGenre, data.films);
   let output = "";
   for (let i = 0; i < filteredData.length; i++) {
     output =

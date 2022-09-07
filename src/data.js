@@ -1,9 +1,7 @@
-import data from "./data/ghibli/ghibli.js";
-
-export const calculateAverage = () => {
+export const calculateAverage = (films) => {
   let people_movie = [];
-  for (let i = 0; i < data.films.length; i++) {
-    let movie = data.films[i];
+  for (let i = 0; i < films.length; i++) {
+    let movie = films[i];
     let numberCharacters = movie.people.length;
     people_movie.push(numberCharacters);
   }
@@ -13,9 +11,9 @@ export const calculateAverage = () => {
 
 // filter
 
-export const searchFilters = (rawText) => {
+export const searchFilters = (rawText, films) => {
   const text = rawText.toLowerCase();
-  const movie = data.films.filter((movie) =>
+  const movie = films.filter((movie) =>
     movie.title.toLowerCase().includes(text)
   );
   return movie;
@@ -23,9 +21,9 @@ export const searchFilters = (rawText) => {
 
 // filter 2
 
-export const GenreFilters = (genre) => {
+export const GenreFilters = (genre, films) => {
   const genreText = genre.toLowerCase();
-  const movie = data.films.filter((movie) =>
+  const movie = films.filter((movie) =>
     movie.genre.toLowerCase().includes(genreText)
   );
   return movie;
