@@ -1,4 +1,4 @@
-import { calculateAverage } from "./data.js";
+import { ComputeStats } from "./data.js";
 import data from "./data/ghibli/ghibli.js";
 //chart
 
@@ -16,7 +16,7 @@ const myChart = new Chart(ctx, {
     datasets: [
       {
         label: "",
-        data: calculateAverage(data.films),
+        data: ComputeStats(data.films),
         backgroundColor: [
           "rgba(255, 99, 132, 0.2)",
           "rgba(54, 162, 235, 0.2)",
@@ -54,7 +54,7 @@ const myChart = new Chart(ctx, {
 
 // data
 
-let characterArray = calculateAverage(data.films);
+let characterArray = ComputeStats(data.films);
 let output = "";
 for (let i = 0; i < data.films.length; i++) {
   output =

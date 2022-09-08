@@ -1,5 +1,5 @@
 import {
-  calculateAverage,
+  ComputeStats,
   sortDateRecent,
   sortDateAncient,
   GenreFilters,
@@ -56,7 +56,18 @@ describe("Sort films by date", () => {
     const sortedFilms = sortDateAncient(data.films);
     const isSorted = sortedFilms.every((movie, i, array) => {
       if (array[i + 1]) {
-        return Number(movie.release_date) > Number(array[i + 1].release_date);
+        return Number(movie.release_date) >= Number(array[i + 1].release_date);
+      }
+      return true;
+    });
+    expect(isSorted).toBe(true);
+  });
+
+  it("Films are sorted ascending by date ", () => {
+    const sortedFilms = sortDateRecent(data.films);
+    const isSorted = sortedFilms.every((movie, i, array) => {
+      if (array[i + 1]) {
+        return Number(movie.release_date) <= Number(array[i + 1].release_date);
       }
       return true;
     });
@@ -66,6 +77,10 @@ describe("Sort films by date", () => {
 
 describe("Calculate characters by films", () => {
   it("Is a function", () => {
-    expect(typeof calculateAverage).toBe("function");
+    expect(typeof ComputeStats).toBe("function");
+  });
+
+  it("Return an array", () => {
+    expect(Array.isArray(ComputeStats(data.films))).toBe(true);
   });
 });

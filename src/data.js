@@ -1,4 +1,4 @@
-export const calculateAverage = (films) => {
+export const ComputeStats = (films) => {
   let people_movie = [];
   for (let i = 0; i < films.length; i++) {
     let movie = films[i];

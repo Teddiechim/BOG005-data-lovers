@@ -102,7 +102,7 @@ function dataMovie(e) {
     <div class="carouselContainer">
      <div class="carouselList">`;
 
-  let carouselClose = `</div>
+  let carouselClose = `</div> 
            <button aria-label="prev" class="carouselBack">
              <i class="fi fi-rr-angle-left"></i>
            </button>
@@ -136,7 +136,10 @@ function dataMovie(e) {
           `;
   }
 
-  let locationsText = `<span class="titlesMovie">LOCATIONS</span>`;
+  let locationsText =
+    clickedMovie.locations.length != 0
+      ? `<span class="titlesMovie">LOCATIONS</span>`
+      : "";
 
   let locationsInformation = "";
   for (let i = 0; i < clickedMovie.locations.length; i++) {
@@ -157,7 +160,10 @@ function dataMovie(e) {
          </section>`;
   }
 
-  let vehiclesText = `<span class="titlesMovie">VEHICLES</span>;`;
+  let vehiclesText =
+    clickedMovie.vehicles.length != 0
+      ? `<span class="titlesMovie">VEHICLES</span>;`
+      : "";
 
   let vehiclesInformation = "";
   for (let i = 0; i < clickedMovie.vehicles.length; i++) {
@@ -213,14 +219,33 @@ function dataMovie(e) {
   const carousel = document.querySelectorAll(".carouselList");
   for (let nodo of carousel) {
     new Glider(nodo, {
-      slidesToScroll: 3,
-      slidesToShow: 3,
+      slidesToScroll: 1,
+      slidesToShow: 1,
       draggable: true,
       dots: ".carouselIndicators",
       arrows: {
         prev: ".carouselBack",
         next: ".carouselNext",
       },
+      responsive: [
+        {
+          // screens greater than >= 775px
+          breakpoint: 600,
+          settings: {
+            // Set to `auto` and provide item width to adjust to viewport
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
+        },
+        {
+          // screens greater than >= 1024px
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+          },
+        },
+      ],
     });
   }
 }
