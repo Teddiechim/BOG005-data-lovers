@@ -4,7 +4,7 @@
 <h1 align="center">STUDIO GHIBLI WIKI</h1>
 <h3 align="center">
 
-[ViewDemo](https://teddiechim.github.io/BOG005-data-lovers/src/)
+[ViewDemo](https://teddiechim.github.io/BOG005-data-lovers/)
 
 </h3>
 
