@@ -65,20 +65,23 @@ Lo primero que hicimos fue realizar bocetos en programas de diseño y organizar 
 
 ## :eyes: HISTORIAS DE USUARIO
 
-![Usuario-1](https://i.im.ge/2022/09/07/OVvylT.Usuarios-01.png)
-![Usuario-2](https://i.im.ge/2022/09/07/OVWQyF.Usuarios-02.png)
-![Usuario-3](https://i.im.ge/2022/09/07/OVWTzK.Usuarios-03.png)
-![Usuario-4](https://i.im.ge/2022/09/07/OVWqyC.Usuarios-04.png)
+![historia 1](https://user-images.githubusercontent.com/107264908/189007541-3454ddd0-f7bb-4d9f-9f51-9443cfd7327c.png)
+
+![historia 2](https://user-images.githubusercontent.com/107264908/189007549-bd81d18c-b8e9-4e27-8ce8-d2f8ca9f783e.png)
+
+![historia 3](https://user-images.githubusercontent.com/107264908/189007559-8284a5db-83b4-4bfb-bba4-e6d050302227.png)
+
+![historia 4](https://user-images.githubusercontent.com/107264908/189007567-91b91b68-4d5a-43a7-a804-5bc58c02c7cc.png)
 
 ## :zap: PROTOTIPO DE BAJA FIDELIDAD
 
 ### :computer: Diseño para desktop:
 
-![Prototipo1-1](https://i.im.ge/2022/09/07/OVvYCa.prototype-desktop-1.jpg)
+![prototype desktop](https://user-images.githubusercontent.com/107264908/189007623-675ece5d-2165-4525-a27e-ee6c0896f0e9.jpg)
 
 ### :iphone: Diseño para mobile:
 
-![Prototipo1-2](https://i.im.ge/2022/09/07/OVJDJa.prototype-mobile-1.jpg)
+![prototype mobile](https://user-images.githubusercontent.com/107264908/189007680-bca88977-eac3-4492-9aa7-6a2e4aa1764d.jpg)
 
 ## :high_brightness: PROTOTIPO DE ALTA FIDELIDAD
 
@@ -94,11 +97,11 @@ Prototipo para diseño mobile realizado en figma
 
 ### :iphone: Mobile
 
-![pagina-1](https://i.im.ge/2022/09/07/OVJk90.Captura1.jpg)
+![WhatsApp Image 2022-09-07 at 7 33 57 PM](https://user-images.githubusercontent.com/107264908/189008027-ffae63ab-0a1f-42d8-91b2-9314b8730ceb.jpeg)
 
-### :clapper: Pagina web
+### :clapper: Página web
 
-![pagina-1](https://i.im.ge/2022/09/07/OVnrLK.Captura2.jpg)
+![WhatsApp Image 2022-09-07 at 7 33 09 PM](https://user-images.githubusercontent.com/107264908/189008097-cc007f71-3553-4b8a-988a-ebac746ec822.jpeg)
 
 Video de
 [Usabilidad de la pagina](https://www.youtube.com/watch?v=VIxgit1Z1qo)
